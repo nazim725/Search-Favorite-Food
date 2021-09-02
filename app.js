@@ -5,6 +5,7 @@ const searchFood=()=>{
         .then(res=>res.json())
         .then(data=>displayFood(data.meals))
         .catch(res=>alert("Something Wrong, Please Try Again"))
+        searchInput.value=''
     
 
         const displayFood=foods=>{
